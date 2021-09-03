@@ -11,6 +11,13 @@
 				td,  th {padding:0.5wem;
 	border:.25px solid #000;
 }
+caption {font-size: 1.2em;}
+		#wrapper{display: flex;
+						 flex-direction: row;}
+		#perInfo{flex: 3;}
+		#musicSurvey{flex: 5;}
+		#musicSurvey2{flex: 2;}		
+		input[type="radio"], input[type="checkbox"]{display: inline;}
 		</style>
 	</head>
 <body>
@@ -37,5 +44,48 @@
 				<td header="rating">R</td>
 				<td header="description">A partially handicapped man named Karl is relased from a mental hospital, about 20 years after murdering his mother and another person.</td>
 				<td header="link"><a href="https://www.youtube.com/watch?v=-RLVfo4SZfg" target="_blank">Sling Blade Trailer</a>
-</body>
+				</tr>
+		</tbody>
+	</table>
+	<h1>Music Survey</h1>
+	<p> This is a music survey form using 3 column grid layout</p>
+	<form method="post" action="http://webdevbasic.net/scripts/demo.phop">
+		<div id="wrapper">
+			<fieldset id="perinfo"><legend>Personal Information</legend>
+				<label for="yourName">Name:</label>
+				<input type="text" name="yourName" id="yourName" required="required"
+				placeholder="your first and last name">
+				<label for="eMail">Email:</label>
+				<input type="text" name="eMail" id="eMail" required="required"
+				placeholder="eMail Address">
+			</fieldset>
+			<fieldset id="musicSurvey"><legend>Music Survey</legend>
+				Select One:<br>
+				<input type="radio" name="myMusic" id="R" value="Rock n Roll">
+				Rock n Roll<br>
+				<input type="radio" name="myMusic" id="C" value="Country">
+				Country<br>
+				<input type="radio" name="myMusic" id="M" value="Modern">
+				Modern<br>
+				<br>
+				Select Song:<br>
+				<input type="checkbox" name="song" id="scom" value="Sweet Child of Mine">
+				Sweet Child of Mine<br>
+				<input type="checkbox" name="song" id="dra" value="Dirt Road Anthem">
+				Dirt Road Anthem<br>
+				<input type="checkbox" name="song" id="dtd" value="Dusk Till Dawn">
+				Dusk Till Dawn<br>
+			</fieldset>
+			<fieldset id="musicSurvey2"><legend>Music</legend>
+				Do you like Music:<br>
+				<select size="1" name="music" id="music">
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="A Little">A Little</option>
+					<option value="Not at All">Not at All</option>
+				</select>
+				<input id="mySubmit" type="submit" value="Submit">
+				<input id="myReset" type="reset" value="Reset">
+			</fieldset>
+	</body>
 </html>
