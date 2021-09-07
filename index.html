@@ -1,99 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>Tewell Chapter8-9HandsOnExercise</title>
 	<meta charset="utf-8">
 	<style>
-	body{
-		background-color:#E2F516;
-	}
-	table {margin: auto;
-		border: 6px solid #834;
-		border-spacing: 6;
-		background-color: #16F529;
+		body {
+			background-color: #E2F516;
 		}
-		td,  th {padding:0.5wem;
-			border:.75px solid #834;
+
+		table {
+			margin: auto;
+			border: 6px solid #834;
+			border-spacing: 6;
+			background-color: #16F529;
 		}
-		caption {font-size: 2.0em;}
-		#wrapper{display: flex;
-			flex-direction: row;}
-			#perInfo{flex: 2;}
-			#musicSurvey{flex: 5;}
-			#musicSurvey2{flex: 3;}
-			input[type="radio"], input[type="checkbox"]{display: inline;}
-			</style>
-		</head>
-		<body>
-			<h1>Favorite Movie</h1>
-			<table>
-				<caption> Favorite Movie Information</caption>
-				<thead>
-				</thead>
-				<tbody>
-					<tr>
-						<th id="title">Title of movie</th>
-						<th id="director">Director</th>
-						<th id="leading actor">Leading Actor</th>
-						<th id="leading actress">Leading Actress</th>
-						<th id="rating">Rating</th>
-						<th id="description">Description of Movie</th>
-						<th id="link">Absolute Link</th>
-					</tr>
-					<tr>
-						<td header="title">Sling Blade</td>
-						<td header="director">Billy Bob Thornton</td>
-						<td header="leading actor">Billy Bob Thornton</td>
-						<td header="leading actress">Natalie Canerday</td>
-						<td header="rating">R</td>
-						<td header="description">	A partially handicapped man named Karl is relased from a mental hospital, about 20 years after murdering his mother and another person.</td>
-					</div>
-					<td header="link"><a href="https://www.youtube.com/watch?v=-RLVfo4SZfg" target="_blank">Sling Blade Trailer</a>
-					</tr>
-				</tbody>
-			</table>
-			<h1>Music Survey</h1>
-			<form method="post" action="http://webdevbasic.net/scripts/demo.phop">
-				<div id="wrapper">
-					<fieldset id="perinfo"><legend>Personal Information</legend>
-						<label for="yourName">Name:</label>
-						<input type="text" name="yourName" id="yourName" required="required"
-						placeholder="your first and last name">
-						<label for="eMail">Email:</label>
-						<input type="text" name="eMail" id="eMail" required="required"
-						placeholder="eMail Address">
-					</fieldset>
-					<fieldset id="musicSurvey"><legend>Music Survey</legend>
-						Select One:<br>
-						<input type="radio" name="myMusic" id="R" value="Rock n Roll">
-						Rock n Roll<br>
-						<input type="radio" name="myMusic" id="C" value="Country">
-						Country<br>
-						<input type="radio" name="myMusic" id="M" value="Modern">
-						Modern<br>
-						<br>
-						Select Song:<br>
-						<input type="checkbox" name="song" id="scom" value="Sweet Child of Mine">
-						Sweet Child of Mine<br>
-						<input type="checkbox" name="song" id="dra" value="Dirt Road Anthem">
-						Dirt Road Anthem<br>
-						<input type="checkbox" name="song" id="dtd" value="Dusk Till Dawn">
-						Dusk Till Dawn<br>
-					</fieldset>
-					<fieldset id="musicSurvey2"><legend>Music</legend>
-						Do you like Music:<br>
-						<select size="1" name="music" id="music">
-							<option value="Yes">Yes</option>
-							<option value="No">No</option>
-							<option value="A Little">A Little</option>
-							<option value="Not at All">Not at All</option>
-						</select>
-						<form action="/action_page.php">
-							<textarea rows="3" cols="60" name="comment">Enter Comment Here...</textarea>
-							<input type="submit">
-							<input type="reset">
-						</form>
-					</fieldset>
-					<p style=" position: absolute; bottom: 0; left: 0; width: 100%; text-align: center;">Charles Tewell  CTewell@nwmissouri.edu</p>
-				</body>
-				</html>
+
+		td,
+		th {
+			padding: 0.5wem;
+			border: .75px solid #834;
+		}
+
+		caption {
+			font-size: 2.0em;
+		}
+
+		#wrapper {
+			display: flex;
+			flex-direction: row;
+		}
+
+		#perInfo {
+			flex: 2;
+		}
+
+		#musicSurvey {
+			flex: 5;
+		}
+
+		#musicSurvey2 {
+			flex: 3;
+		}
+
+		input[type="radio"],
+		input[type="checkbox"] {
+			display: inline;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Favorite Movie</h1>
+	<table>
+		<caption> Favorite Movie Information</caption>
+		<thead>
+		</thead>
+		<tbody>
+			<tr>
+				<th id="title">Title of movie</th>
+				<th id="director">Director</th>
+				<th id="leading actor">Leading Actor</th>
+				<th id="leading actress">Leading Actress</th>
+				<th id="rating">Rating</th>
+				<th id="description">Description of Movie</th>
+				<th id="link">Absolute Link</th>
+			</tr>
+			<tr>
+				<td header="title">Sling Blade</td>
+				<td header="director">Billy Bob Thornton</td>
+				<td header="leading actor">Billy Bob Thornton</td>
+				<td header="leading actress">Natalie Canerday</td>
+				<td header="rating">R</td>
+				<td header="description"> A partially handicapped man named Karl is relased from a mental hospital, about 20 years after murdering his mother and another person.</td>
+				</div>
+				<td header="link"><a href="https://www.youtube.com/watch?v=-RLVfo4SZfg" target="_blank">Sling Blade Trailer</a>
+			</tr>
+		</tbody>
+	</table>
+	<h1>Music Survey</h1>
+	<form method="post" action="http://webdevbasic.net/scripts/demo.phop">
+		<div id="wrapper">
+			<fieldset id="perinfo">
+				<legend>Personal Information</legend>
+				<label for="yourName">Name:</label>
+				<input type="text" name="yourName" id="yourName" required="required" placeholder="your first and last name">
+				<label for="eMail">Email:</label>
+				<input type="text" name="eMail" id="eMail" required="required" placeholder="eMail Address">
+			</fieldset>
+			<fieldset id="musicSurvey">
+				<legend>Music Survey</legend>
+				Select One:<br>
+				<input type="radio" name="myMusic" id="R" value="Rock n Roll">
+				Rock n Roll<br>
+				<input type="radio" name="myMusic" id="C" value="Country">
+				Country<br>
+				<input type="radio" name="myMusic" id="M" value="Modern">
+				Modern<br>
+				<br>
+				Select Song:<br>
+				<input type="checkbox" name="song" id="scom" value="Sweet Child of Mine">
+				Sweet Child of Mine<br>
+				<input type="checkbox" name="song" id="dra" value="Dirt Road Anthem">
+				Dirt Road Anthem<br>
+				<input type="checkbox" name="song" id="dtd" value="Dusk Till Dawn">
+				Dusk Till Dawn<br>
+			</fieldset>
+			<fieldset id="musicSurvey2">
+				<legend>Music</legend>
+				Do you like Music:<br>
+				<select size="1" name="music" id="music">
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="A Little">A Little</option>
+					<option value="Not at All">Not at All</option>
+				</select>
+				<form action="/action_page.php">
+					<textarea rows="3" cols="60" name="comment">Enter Comment Here...</textarea>
+					<input type="submit">
+					<input type="reset">
+				</form>
+			</fieldset>
+			<p style=" position: absolute; bottom: 0; left: 0; width: 100%; text-align: center;">Charles Tewell CTewell@nwmissouri.edu</p>
+</body>
+
+</html>
